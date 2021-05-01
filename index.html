@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora Estadística</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+  <body onload="init();" style="margin: 50px;" >
+    <center>
+      <header>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-success justify-content-center">
+          <a class="navbar-brand font-weight-bold text-large" ><h1><b> Calculadora Estadística </b></h1></a>
+        </nav>
+      <!--  <h1><strong>Calculadora Estadística</strong></h1> -->
+        <br>
+         <p style="width: 600px;"> <font size="4">
+         <b>Intrucciones:</b>  Pon en el recuadro el número de datos numéricos de los
+         que quieres calcular los datos estadísticos. Una vez que los pongas,
+         da clic en el botón “Enviar” y llena los recuadros que aparecerán con
+         los datos. Recuerda llenar todos los recuadros. Si deseas proceder con el cálculo da clic en  el botón “calcular”, y 
+         Si deseas volver a introducir otra cantidad de datos da clic en el botón ”Limpiar”.
+
+        </font>
+        </p>
+      </header>
+          <br>
+          <br>
+      <section>
+        
+
+        <!--  <input
+        type="text"
+        id="numdatos"
+        name="nudatos"
+        placeholder="Ingresa el numero de datos que vas a checar"
+        class="caja-datos"
+        required
+      />
+    -->
+
+        <div class="input-group mb-3 mx-auto" style="width: 320px;">
+          <input
+            type="text"
+            id="numdatos"
+            class="form-control rounded"
+            placeholder="Ingresa el número de datos"
+            aria-label="Recipient's username"
+            aria-describedby="basic-addon2"
+          />
+          <div class="input-group-append mx-auto" style="width: 100px;">
+            <button class="btn btn-primary " type="button" onclick="cantidad();">
+              Enviar
+            </button>
+          </div>
+        </div>
+
+       <!--  <button type="button" onclick="cantidad();" class="btn btn-primary">
+        Calcular
+      </button>
+      -->
+      
+        
+        <br />
+
+        <!--     <button type="button" onclick="solve();" class="btn btn-success">
+          Calcular de:
+    -->
+
+        <div id="espacionum">
+          <!--este espacio vacío es para que aqui vayan los numeros a sumar para el promedio -->
+        </div>
+
+
+        <br>
+    
+
+        <table class="table table-hover table-sm border-primary rounded" style="width: 500px;">
+          <thead class="text-light bg-secondary">
+            <tr style="width: 250px;">
+              <th scope="col" class="text-center" style="width: 250px;">Medida</th>
+              <th scope="col" class="text-center" style="width: 250px;">Valor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="width: 250px;">
+              <th scope="row" class="text-center" style="width: 250px;">Media Aritmética</th>
+              <td id="mediari" class="text-center" style="width: 250px;"></td>
+
+            </tr>
+            <tr style="width: 250px;">
+              <th scope="row" class="text-center" style="width: 250px;">Varianza</th>
+              <td id="varian" class="text-center" style="width: 250px;"></td>
+
+            </tr>
+            <tr style="width: 250px;">
+              <th scope="row" class="text-center" style="width: 250px;">Desviación Estándar</th>
+              <td id="desvi" class="text-center" style="width: 250px;"></td>
+
+            </tr>
+          </tbody>
+        </table>
+        
+       
+
+      <!--  Guardar por si voy a editar lo otro
+      </section>
+
+      <section>
+        <div class="media">
+          <p>Media aritmetica: <span id="mediari"></span></p>
+        </div>
+
+        <br />
+
+        <div class="varianza">
+          <p>Varianza: <span id="varian"></span></p>
+        </div>
+
+        <br />
+
+        <div class="desviacion-es">
+          <p>Desviación Estandar: <span id="desvi"></span></p>
+        </div>
+
+        <br />
+
+        <div class="mediana">
+          <p>Mediana: <span id="medianasi"></span></p>
+        </div>
+      </section>
+
+     Guardar por si ocupo editar lo otro -->
+
+    </center>
+
+    <script src="Funciones.js"></script>
+    
+  </body>
+  <br>
+  <footer>
+    <p class="center-text"><i>Creada por Luis Rodríguez</i></p>
+    
+  </footer>
+</html>
